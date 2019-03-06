@@ -190,20 +190,22 @@ The `reduce()` method executes a reducer function (that you provide) on each mem
 ### PRACTICE: Chaining methods together
 
 **What value do you get when you execute this chain of array iterators?**
-
+```javascript
 [1,2,3].map( x => x*x ).reduce((acc,x) => acc + x );
 
 
 //expected output
 => 
+```
 
 **How about this one?**
-
+```javascript
 const sales = [ 100, 230, 55];
 totalAfterTaxSales = sales.map( (amount) => amount * 1.15 ).reduce( (acc,val) => acc + val );
 
 //expected output
 => 
+```
 
 -----
 
