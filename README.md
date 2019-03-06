@@ -4,7 +4,7 @@ In Javascript, functions are first-class objects that behave in the same way as 
 
 When a function is passed as an argument to another function, this is known as a callback.
 
-_Example:_
+**Example:**
 
 ```javascript
 
@@ -35,14 +35,33 @@ For the following lesson please review [For Loops](https://developer.mozilla.org
 
 Why write for loops over and over? they involve way too much writing, they're prone to syntactical errors. 
 
-In the words of Jon Zachary: 
+In the words of GA Lead Instructor Jon Zachary: 
 
-Terser Syntax => less typos => happier developers => world peace
+_Terser Syntax => less typos => happier developers => world peace_
 
 
 ## [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-Call the forEach method on any array, pass it a callback function which invokes three agruments(*Optional*): 
+We already know that we can use a for loop could be used to loop through each value in an array like so:
+
+```javascript
+
+const arr = ['a', 'b', 'c', 'd', 'e']
+
+for (let i=0; i < arr.length; i++) {
+  console.log(arr[i])
+}
+
+//expected output
+=> 'a'
+=> 'b'
+=> 'c'
+=> 'd'
+=> 'e'
+
+```
+
+Now we can call the forEach method on any array, pass it a callback function which invokes three agruments(*Optional*): 
 * the element value
 * the element index
 * the array being traversed
