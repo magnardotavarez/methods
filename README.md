@@ -4,7 +4,8 @@ In Javascript, functions are first-class objects that behave in the same way as 
 
 When a function is passed as an argument to another function, this is known as a callback.
 
-Example:
+_Example:_
+
 ```javascript
 
 function dance() {
@@ -22,7 +23,7 @@ sing("Happy", dance);
 => "I'm singing along to Happy."
 => "I'm moving my body to the groove."
 
-'''
+```
 
 # Array Iterators
 Arrays have a number of methods that utilize callbacks to make them more flexible.
