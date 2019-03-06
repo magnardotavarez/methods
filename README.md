@@ -193,7 +193,6 @@ The `reduce()` method executes a reducer function (that you provide) on each mem
 
 [1,2,3].map( x => x*x ).reduce((acc,x) => acc + x );
 
------
 
 **How about this one?**
 
