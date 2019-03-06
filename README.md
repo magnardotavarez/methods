@@ -135,6 +135,13 @@ console.log(mapped)
 => [2, 4, 6, 8, 10]
 
 ```
+Here is an example of using .map() with HTML elements. You'll be seeing this more when you get to GA and start using React!
+
+```javascript
+['red','green','blue'].map( color => `<p> ${color.toUpperCase()}</p>` );
+<< ['<p>RED</p>', '<p>GREEN</p>', '<p>BLUE</p>']
+```
+
 
 ## [.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
