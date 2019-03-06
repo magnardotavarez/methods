@@ -34,7 +34,7 @@ In this lesson, we'll be talking about:
 For the following lesson please review [For Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)!
 
 
-## 1. [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+## 1 [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 We already know that we can use a for loop could be used to loop through each value in an array like so:
 
@@ -113,7 +113,7 @@ arr.forEach((element, i, array) => {
 
 -----
 
-## 2. [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+## 2 [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 Use the `.map()` method on any array, it will return a new array with new mutated values. 
 
@@ -131,7 +131,7 @@ console.log(mapped)
 
 ```
 
-## 3. [.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+## 3 [.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 This method creates a new array with all the elements that pass the test implemented by the function... or it FILTERS everything you're not looking for. 
 
@@ -148,7 +148,7 @@ console.log(filtered)
 ["Carlos", "Dmitriy", "Alberto", "Magnardo"]
 
 ```
-## 4. [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+## 4 [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 The `reduce()` method executes a reducer function (that you provide) on each memeber of the array against an accumulator and each element in the array (from left to right) to be *REDUCED* to a single value
 
 ```javascript
@@ -163,7 +163,7 @@ let newArr = arr.reduce(reducer)
 ```
 
 
-## 5. [.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+## 5 [.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
 Use the `.find()` method on any array and it returns the **value** of the **first element** in the arrat that satisfies the callback function, otherwise `undefined` is returned. Just like the .forEach() method, the callback function also can take three arguments. 
 
