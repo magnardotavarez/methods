@@ -83,7 +83,7 @@ arr.forEach(function(element){
 => 'e'
 ```
 
-### Now let's try this method with an anonymous arrow function. [Review: ES6 Arrow Function] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) 
+Now let's try this method with an anonymous arrow function. [Review: ES6 Arrow Function] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) 
 
 Pass in the three arguments: element value, element index, and the array being traversed.
 
