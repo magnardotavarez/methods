@@ -131,7 +131,6 @@ const mapped = arr.map( d => d * 2 );
 console.log(mapped)
 
 //expected output:
-
 => [2, 4, 6, 8, 10]
 
 ```
@@ -139,7 +138,10 @@ Here is an example of using .map() with HTML elements. You'll be seeing this mor
 
 ```javascript
 ['red','green','blue'].map( color => `<p> ${color.toUpperCase()}</p>` );
-<< ['<p>RED</p>', '<p>GREEN</p>', '<p>BLUE</p>']
+
+
+//expected output:
+=> ['<p>RED</p>', '<p>GREEN</p>', '<p>BLUE</p>']
 ```
 
 
