@@ -62,10 +62,7 @@ Why write for loops over and over? they involve way too much writing, they're pr
 > >  _Terser Syntax => less typos => happier developers => world peace_
 
 
-Now we can call the forEach method on any array, pass it a callback function which invokes three arguments(*Optional*): 
-* the element value
-* the element index
-* the array being traversed
+Now we can call the forEach method on any array:
 
 ```javascript
 
@@ -90,10 +87,11 @@ Now let's try this method with an anonymous arrow function.
 [For Review: 
 ES6 Arrow Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-Here we can pass in the three optional arguments for the .forEach method: 
+We can pass in three optional arguments for the .forEach method: 
 * element value
 * element index
 * array being traversed.
+
 
 ```javascript
 
