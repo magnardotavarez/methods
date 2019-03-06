@@ -115,6 +115,11 @@ arr.forEach((element, i, array) => {
 
 ## [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
+The map() method is very similar to the forEach() method. It also iterates over an array, and takes a callback function as a parameter that is invoked on each item in the array. This is often used to process data returned from databases in array form, such as adding HTML tags to plain text. 
+
+_The difference between .forEach() and .map() is that .map() returns a **new array** that replaces each value with the return value of the callback function._
+
+
 Use the `.map()` method on any array, it will return a new array with new mutated values. 
 
 ```javascript
@@ -135,6 +140,9 @@ console.log(mapped)
 
 This method creates a new array with all the elements that pass the test implemented by the function... or it FILTERS everything you're not looking for. 
 
+The filter() method returns a new array that only contains items from the original array that return true when passed to the callback. 
+
+
 ```javascript
 
 let names = ["Carlos", "Dmitriy", "Angel", "Ester", "Alberto", "Magnardo"]
@@ -148,8 +156,17 @@ console.log(filtered)
 ["Carlos", "Dmitriy", "Alberto", "Magnardo"]
 
 ```
+
+
 ## [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-The `reduce()` method executes a reducer function (that you provide) on each memeber of the array against an accumulator and each element in the array (from left to right) to be *REDUCED* to a single value
+
+The reduce() method is another method that iterates over each value in the array, but this time it cumulatively combines each result to return just a single value. 
+
+A callback function is used to describe how to combine each value of the array with the running total.
+
+The callback usually takes two parameters: 
+* The first parameter represents the **accumulated value** of all the calculations so far
+* The second parameter represents the **current value** in the array. 
 
 ```javascript
 let arr = [1, 2, 3, 4, 5, 6, 7]; 
@@ -160,12 +177,29 @@ let newArr = arr.reduce(reducer)
 
 //expected output
 => 28
+
 ```
 
+**RECAP:
+
+The `reduce()` method executes a reducer function (that you provide) on each member of the array against an accumulator and each element in the array (from left to right) to be *REDUCED* to a single value
+
+
+-----
+
+**PRACTICE: Chaining methods together
+
+[1,2,3].map( x => x*x ).reduce((acc,x) => acc + x );
+
+
+const sales = [ 100, 230, 55];
+totalAfterTaxSales = sales.map( (amount) => amount * 1.15 ).reduce( (acc,val) => acc + val );
+
+-----
 
 ## [.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
-Use the `.find()` method on any array and it returns the **value** of the **first element** in the arrat that satisfies the callback function, otherwise `undefined` is returned. Just like the .forEach() method, the callback function also can take three arguments. 
+Use the `.find()` method on any array and it returns the **value** of the **first element** in the array that satisfies the callback function, otherwise `undefined` is returned. Just like the .forEach() method, the callback function also can take three arguments. 
 
 ```javascript
 
