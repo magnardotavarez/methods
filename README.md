@@ -211,7 +211,7 @@ totalAfterTaxSales = sales.map( (amount) => amount * 1.15 ).reduce( (acc,val) =>
 
 ## [.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
-Use the `.find()` method on any array and it returns the **value** of the **first element** in the array that satisfies the callback function, otherwise `undefined` is returned. Just like the .forEach() method, the callback function also can take three arguments. 
+Use the `.find()` method on any array and it returns the **value** of the **first element** in the array that satisfies the callback function and returns a TRUE value. Otherwise `undefined` is returned. Just like the .forEach() method, the callback function also can take three arguments, but we will save this for another lesson.
 
 ```javascript
 
@@ -227,3 +227,6 @@ console.log(found);
 => 35
 
 ```
+
+
+.find() does not **mutate** the array on which it is called. That means it returns a new value without changing the old array, just like .map()
