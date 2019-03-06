@@ -4,6 +4,25 @@ In Javascript, functions are first-class objects that behave in the same way as 
 
 When a function is passed as an argument to another function, this is known as a callback.
 
+Example:
+```javascript
+
+function dance() {
+    console.log("I'm moving my body to the groove.");
+}
+
+function sing(song, dance) {
+    console.log(`I'm singing along to ${song}.`);
+    dance();
+}
+
+sing("Happy", dance);
+
+//expected output
+=> "I'm singing along to Happy."
+=> "I'm moving my body to the groove."
+
+'''
 
 # Array Iterators
 Arrays have a number of methods that utilize callbacks to make them more flexible.
