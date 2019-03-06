@@ -63,7 +63,7 @@ Why write for loops over and over? they involve way too much writing, they're pr
 
 -----
 
-Now we can call the forEach method on any array:
+Now we can call the **.forEach()** method on any array:
 
 ```javascript
 
@@ -83,7 +83,7 @@ arr.forEach(function(element){
 
 -----
 
-Next, let's try this method with an anonymous arrow function. 
+Next, let's try the **.forEach()** method with an anonymous arrow function. 
 
 [For Review: 
 ES6 Arrow Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
