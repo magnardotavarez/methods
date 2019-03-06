@@ -33,12 +33,6 @@ In this lesson, we'll be talking about:
 
 For the following lesson please review [For Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)!
 
-Why write for loops over and over? they involve way too much writing, they're prone to syntactical errors. 
-
-In the words of GA Lead Instructor Jon Zachary: 
-
-_Terser Syntax => less typos => happier developers => world peace_
-
 
 ## [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
@@ -61,7 +55,14 @@ for (let i=0; i < arr.length; i++) {
 
 ```
 
-Now we can call the forEach method on any array, pass it a callback function which invokes three agruments(*Optional*): 
+Why write for loops over and over? they involve way too much writing, they're prone to syntactical errors. 
+
+> ## In the words of GA Lead Instructor Jon Zachary: 
+
+> >  _Terser Syntax => less typos => happier developers => world peace_
+
+
+Now we can call the forEach method on any array, pass it a callback function which invokes three arguments(*Optional*): 
 * the element value
 * the element index
 * the array being traversed
@@ -70,8 +71,8 @@ Now we can call the forEach method on any array, pass it a callback function whi
 
 const arr = ['a', 'b', 'c', 'd', 'e']
 
-arr.forEach(function(el){
-    console.log(el)
+arr.forEach(function(element){
+    console.log(element)
 })
 
 //expected output
@@ -80,9 +81,18 @@ arr.forEach(function(el){
 => 'c'
 => 'd'
 => 'e'
+```
 
-arr.forEach((d, i, a) => {
-    console.log(`this is ${d}, this is the index ${i}, this is the array being traversed: ${a}`)
+Now let's try this method with an anonymous function. [ES6 Arrow Function] ("https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions") 
+
+Pass in the three arguments: element value, element index, and the array being traversed.
+
+```javascript
+
+const arr = ['a', 'b', 'c', 'd', 'e']
+
+arr.forEach((element, i, array) => {
+    console.log(`this is ${element}, this is the index ${i}, this is the array being traversed: ${array}`)
 })
 
 //expected output
