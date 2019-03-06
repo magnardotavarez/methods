@@ -180,7 +180,7 @@ let newArr = arr.reduce(reducer)
 
 ```
 
-**RECAP:
+#### RECAP:
 
 The `reduce()` method executes a reducer function (that you provide) on each member of the array against an accumulator and each element in the array (from left to right) to be *REDUCED* to a single value
 
@@ -189,13 +189,13 @@ The `reduce()` method executes a reducer function (that you provide) on each mem
 
 ### PRACTICE: Chaining methods together
 
-** What value do you get when you execute this chain of array iterators?
+** What value do you get when you execute this chain of array iterators? **
 
 [1,2,3].map( x => x*x ).reduce((acc,x) => acc + x );
 
 -----
 
-** How about this one?
+** How about this one? **
 
 const sales = [ 100, 230, 55];
 totalAfterTaxSales = sales.map( (amount) => amount * 1.15 ).reduce( (acc,val) => acc + val );
